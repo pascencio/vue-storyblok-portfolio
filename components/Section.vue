@@ -1,6 +1,6 @@
 <template>
   <b-row>
-    <b-col v-for="item in block.body" :key="item._uid" :cols="block.cols">
+    <b-col v-for="item in block.body" :key="item._uid" :cols="item.cols">
       <component :is="item.component" v-bind="{block:item}" />
     </b-col>
   </b-row>
